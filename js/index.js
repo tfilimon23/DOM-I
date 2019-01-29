@@ -58,6 +58,17 @@ aTag[3].textContent = siteContent["nav"]["nav-item-4"];
 aTag[4].textContent = siteContent["nav"]["nav-item-5"];
 aTag[5].textContent = siteContent["nav"]["nav-item-6"];
 
+
+const navBar = document.querySelector("nav");
+
+const newA1 = document.createElement("a");
+newA1.textContent = "Welcome";
+navBar.prepend(newA1);
+
+const newA2 = document.createElement("a");
+newA2.textContent = "Give";
+navBar.appendChild(newA2);
+
 aTag.forEach (element => {
   element.style.color = "green"; 
 });
@@ -93,24 +104,6 @@ pTag[6].textContent = siteContent["contact"]["phone"];
 pTag[7].textContent = siteContent["contact"]["email"];
 pTag[8].textContent = siteContent["footer"]["copyright"];
 
-
-
-// .appendChild()
-// .prepend()
-// const servicesHeader = document.querySelector('.services-header');
-// const newDiv = document.createElement("div");
-// newDiv.textContent = "Yo, whatup!";  
-// servicesHeader.prepend(newDiv);
-
-// console.log(newDiv);
-
-// const newA1 = document.createElement("a");
-// newA1.textContent = "Welcome";
-// siteContent["nav"].prepend(newA1);
-
-// const newA2 = document.createElement("a");
-// newA2.textContent = "Give";
-// siteContent["nav"].appendChild(newA2);
 
 
 
